@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract USDC is ERC20 {
     address payable public owner;
 
-    constructor(uint initialSupply) ERC20("Etherlink USD", "eUSD") {
+    constructor(uint initialSupply) ERC20("USDC", "USDC") {
         owner = payable(msg.sender);
         _mint(owner, initialSupply * 10 ** decimals());
     }
